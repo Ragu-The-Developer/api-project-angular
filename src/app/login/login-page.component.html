@@ -1,0 +1,33 @@
+
+
+<div class="login-container">
+ 
+    <a href="https://in.bookmyshow.com/"><img src = "assets/images/logo.png" width="150" height="150" alt="logo"/></a>
+
+    <div class="ad-banner">
+        <img src="assets/images/finequs.png" height="100">
+    </div>
+    
+
+    <div class="form-data">
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">UserName</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)] = "username"/>
+        </div>
+
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)] = "password"/>
+            
+        </div>
+
+        <div class="btn-container">
+            <div class="error">{{ errorMssg }}</div>
+            <button type="button" class="btn btn-danger" (click)="login()">Login</button>
+        </div>
+
+    </div>
+</div>
+
+</div>

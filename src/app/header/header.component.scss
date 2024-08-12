@@ -1,0 +1,19 @@
+.header-container
+{
+    width: 100%;
+    height: 80px;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    cursor: pointer;
+
+    .logout
+    {
+        font-size: 19px;
+        margin-right: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<div class="home-container">
+    <div class="trending-movies">
+        <h4>Trending Movies</h4>
+        
+          <div class="movies-thumbnail">
+          <div class="movie" *ngFor="let movie of trendingMovies">
+          <div class="cover">
+            <img [src] = "movie.cover" alt="">
+          </div>
+  
+          <div class="detail">
+            <div class="name">{{ movie.name }}</div>
+            <div class="rating">{{ movie.rating }}</div>
+
+            <ngb-rating [(rate)]="movie.rating" />
+            <hr />
+            <pre>Rate: <b>{{ movie.rating }}</b></pre>
+          
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
+    <div class="popular-movies">
+      <h4 style="margin-top: 10px; margin-left: 10px;">Popular in Theatre</h4>
+     
+        <div class="movie" *ngFor="let movie of theatreMovies">
+        <div class="cover">
+          <img [src] = "movie.cover" alt="">
+        </div>
+
+        <div class="detail">
+          <div class="name">{{ movie.name }}</div>
+          <div class="rating">{{ movie.rating }}</div>
+
+          <ngb-rating [(rate)]="movie.rating" />
+          <hr />
+          <pre>Rate: <b>{{ movie.rating }}</b></pre>
+        
+        </div>
+      </div>
+
+
+    </div>
+</div>
